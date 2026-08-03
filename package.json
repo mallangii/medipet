@@ -1,0 +1,10 @@
+{
+  "name": "medipet",
+  "version": "1.0.0",
+  "description": "A gamified medicine-taking companion app for children with interactive pet growth and caregiver oversight",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "buildCommand": "",
+  "outputDirectory": "public",
+  "framework": "static",
+  "env": {},
+  "regions": ["icn1"],
+  "public": true,
+  "rewrites": [
+    {
+      "source": "/:path((?!.*\\.).*)*",
+      "destination": "/index.html"
+    }
+  ]
+}
