@@ -43,24 +43,23 @@ From now on, any push to the `main` branch will automatically trigger a new depl
 
 ## Local Development
 
-The app is a single `public/index.html` file — just open it in your browser. No build step needed.
+The app is a single root-level `index.html` file — just open it in your browser. No build step needed.
 
 ```bash
 # For development, you can use Python's built-in server
 python3 -m http.server 8000
-# Then visit http://localhost:8000/public
+# Then visit http://localhost:8000
 ```
 
 ## File Structure
 
 ```
 medipet/
-├── public/
-│   └── index.html          # Self-contained React app (all-in-one)
-├── package.json            # Metadata for Vercel
-├── vercel.json             # Deployment config
-├── .gitignore              # Git ignore rules
-└── README.md               # This file
+├── index.html          # Self-contained React app (all-in-one)
+├── package.json        # Metadata for Vercel
+├── vercel.json         # Deployment config
+├── .gitignore          # Git ignore rules
+└── README.md           # This file
 ```
 
 ## Notes
@@ -74,7 +73,7 @@ medipet/
 
 **Deploy failed?**
 - Check that `vercel.json` is at the repo root
-- Ensure `public/index.html` exists
+- Ensure the root-level `index.html` exists
 - Wait 2–3 minutes for Vercel's build cache to clear
 
 **App not loading?**
@@ -83,5 +82,5 @@ medipet/
 - Try a hard refresh (Ctrl+Shift+R or Cmd+Shift+R)
 
 **Want to edit the code?**
-- Edit `public/index.html` directly
+- Edit `index.html` directly
 - Push changes to GitHub → Vercel auto-deploys

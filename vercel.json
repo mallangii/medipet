@@ -1,13 +1,8 @@
 {
-  "buildCommand": "",
-  "framework": "static",
-  "outputDirectory": "public",
-  "env": {},
-  "regions": ["icn1"],
-  "public": "",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/:path((?!.*\\.).*)*",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
