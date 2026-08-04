@@ -1,6 +1,5 @@
 {
   "buildCommand": "",
-  "outputDirectory": "public",
   "framework": "static",
   "env": {},
   "regions": ["icn1"],
